@@ -28,8 +28,6 @@ class App extends Component {
 
 	async uploadFile (file) {
 
-		console.log(file);
-
 		this.setState({appState: AppStates.UPLOADING_FILE});
 
 		const response = await fetch('/api/upload', {
@@ -89,8 +87,6 @@ class DropFile extends Component {
 			alert('Only 1 file can dropped!');
 			return;
 		}
-
-		console.log(items[0]);
 
 		this.props.onFileSelected(items[0].getAsFile());
 	}
