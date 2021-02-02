@@ -1,1 +1,1 @@
-# fauna-image-resizing-streaming-example
+# Image Processing Pipeline with Fauna's streaming
